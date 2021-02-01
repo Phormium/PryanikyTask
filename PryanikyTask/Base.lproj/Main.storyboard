@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PryanikyTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Json URL" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Ph-Rq-7IV">
+                                <rect key="frame" x="7.5" y="54" width="399" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="3rl-UM-A7Z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UCO-Nh-3SE">
+                                <rect key="frame" x="7.5" y="96" width="399" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="1sX-Sv-0fX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fzB-8w-9yh">
+                                <rect key="frame" x="8" y="125" width="399" height="771"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="d8d-cN-fbn"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="ooM-2C-xwm"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2Ph-Rq-7IV" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" constant="-15" id="3j4-nM-yBy"/>
+                            <constraint firstAttribute="bottom" secondItem="fzB-8w-9yh" secondAttribute="bottom" id="Huo-ES-UeA"/>
+                            <constraint firstItem="2Ph-Rq-7IV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="K3m-WF-EWu"/>
+                            <constraint firstItem="UCO-Nh-3SE" firstAttribute="width" secondItem="2Ph-Rq-7IV" secondAttribute="width" id="T7D-GF-voy"/>
+                            <constraint firstItem="2Ph-Rq-7IV" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="cba-2U-fo1"/>
+                            <constraint firstItem="fzB-8w-9yh" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="fku-Ip-GQB"/>
+                            <constraint firstItem="fzB-8w-9yh" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.96" id="rrQ-F2-LQz"/>
+                            <constraint firstItem="UCO-Nh-3SE" firstAttribute="top" secondItem="2Ph-Rq-7IV" secondAttribute="top" constant="42" id="usC-WE-lzp"/>
+                            <constraint firstItem="fzB-8w-9yh" firstAttribute="top" secondItem="UCO-Nh-3SE" secondAttribute="bottom" constant="8" id="v5U-IV-BaZ"/>
+                            <constraint firstItem="UCO-Nh-3SE" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="weX-NO-xg9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="jsonTextField" destination="2Ph-Rq-7IV" id="i8y-6e-hWy"/>
+                        <outlet property="scrollView" destination="fzB-8w-9yh" id="OVJ-o1-e7K"/>
+                        <outlet property="statusLable" destination="UCO-Nh-3SE" id="x7p-Il-eln"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="98.550724637681171" y="60.267857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
